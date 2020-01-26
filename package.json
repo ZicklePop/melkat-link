@@ -1,0 +1,32 @@
+{
+  "name": "melkat.link",
+  "version": "0.0.1",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "next": "next",
+    "test": "jest",
+    "lint": "standard"
+  }
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "next": "^9.2.1",
+    "preact": "^10.2.1",
+    "preact-render-to-string": "^5.1.4",
+    "preact-ssr-prepass": "^1.0.0"
+  }
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "standard": "^14.3.1",
+    "jest": "25.1.0"
+  },
+  "_moduleAliases": {
+    "react": "node_modules/preact/compat",
+    "react-dom": "node_modules/preact/compat",
+    "react-ssr-prepass": "node_modules/preact-ssr-prepass"
+  }
+}
