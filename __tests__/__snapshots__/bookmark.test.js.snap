@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component - bookmark should render 1`] = `"<article __source=\\"[object Object]\\"><h2 __source=\\"[object Object]\\"><a href=\\"https://www.raethedoe.com/\\" __source=\\"[object Object]\\">Rae the Doe</a></h2><p __source=\\"[object Object]\\">A webcomic about a gay disaster, a punk skunk, and lots and lots of puns. Created by Olive Rae Brinker. Updates Monday, Wednesday and Friday.</p><time datetime=\\"Sun, 26 Jan 2020 21:18:37 GMT\\" __source=\\"[object Object]\\">Sun, 26 Jan 2020 21:18:37 GMT</time><ul __source=\\"[object Object]\\"><li __source=\\"[object Object]\\">link</li><li __source=\\"[object Object]\\">webcomic</li></ul></article>"`;

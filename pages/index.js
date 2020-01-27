@@ -1,29 +1,20 @@
 /** @jsx h */
 import { h } from 'preact'
 import Bookmark from '../components/bookmark'
+import Layout from '../components/layout'
 import fetch from 'isomorphic-unfetch'
 import get from 'lodash/get'
-import Head from 'next/head'
 import map from 'lodash/map'
 import parser from 'fast-xml-parser'
 
 const Index = ({ links }) => {
   return (
-    <main>
-      <Head>
-        <title>melkat.link - a link blog from Melanie Kat</title>
-        <meta name='twitter:title' content='melkat.dev' />
-        <meta name='twitter:description' content='melkat codes' />
-        <meta property='og:description' content='melkat.dev' />
-        <meta property='og:title' content='melkat.dev' />
-        <meta name='description' content='a link blog from Melanie Kat' />
-      </Head>
-
+    <Layout>
       <h1>melkat.link</h1>
       {map(links, el => (
         <Bookmark key={el.guid} {...el} />
       ))}
-    </main>
+    </Layout>
   )
 }
 

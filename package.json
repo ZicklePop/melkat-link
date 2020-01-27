@@ -24,14 +24,29 @@
     "tachyons": "^4.11.1"
   },
   "devDependencies": {
+    "jest": "25.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "standard": "^14.3.1",
-    "jest": "25.1.0"
+    "react-test-renderer": "^16.12.0",
+    "standard": "^14.3.1"
   },
   "_moduleAliases": {
     "react": "node_modules/preact/compat",
     "react-dom": "node_modules/preact/compat",
     "react-ssr-prepass": "node_modules/preact-ssr-prepass"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react$": "preact/compat",
+      "^react-dom/test-utils$": "preact/test-utils",
+      "^react-dom$": "preact/compat"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "standard": {
+    "env": "jest"
   }
 }
