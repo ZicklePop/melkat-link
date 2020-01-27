@@ -3,7 +3,7 @@ import { h } from 'preact'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-const Layout = ({ title, description, Children }) => {
+const Layout = ({ title, description, children }) => {
   return (
     <main>
       <Head>
@@ -14,7 +14,7 @@ const Layout = ({ title, description, Children }) => {
         <meta property='og:description' content={description} />
         <meta property='og:title' content={title} />
       </Head>
-      {Children}
+      {children}
     </main>
   )
 }
@@ -22,7 +22,7 @@ const Layout = ({ title, description, Children }) => {
 Layout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  Children: PropTypes.node
+  children: PropTypes.node
 }
 
 Layout.defaultProps = {
