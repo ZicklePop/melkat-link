@@ -22,12 +22,12 @@ const Layout = ({ title, description, Children }) => {
 Layout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  Children: PropTypes.node,
+  Children: PropTypes.node
 }
 
 Layout.defaultProps = {
   title: 'melkat.link - a link blog from Melanie Kat',
-  description: 'a link blog from Melanie Kat',
+  description: 'a link blog from Melanie Kat'
 }
 
 export default Layout
