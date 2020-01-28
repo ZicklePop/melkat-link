@@ -4,7 +4,7 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 const classnames = {
-  main: 'measure center sans-serif',
+  main: 'measure center sans-serif'
 }
 
 const Layout = ({ title, description, children }) => {
@@ -31,7 +31,7 @@ const Layout = ({ title, description, children }) => {
               }
             }
           `}
-          </style>
+        </style>
       </Head>
       {children}
     </main>

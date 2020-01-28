@@ -8,7 +8,7 @@ import map from 'lodash/map'
 import parser from 'fast-xml-parser'
 
 const classnames = {
-  h1: 'lh-title fw1 f2',
+  h1: 'lh-title fw1 f2'
 }
 
 const Index = ({ links }) => {
