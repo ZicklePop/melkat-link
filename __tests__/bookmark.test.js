@@ -1,6 +1,6 @@
 /** @jsx h */
 import { h } from 'preact'
-import render from 'preact-render-to-string'
+import { shallowRender } from 'preact-render-to-string'
 import Bookmark from '../components/bookmark'
 
 const MOCK = {
@@ -13,7 +13,7 @@ const MOCK = {
 
 describe('component - bookmark', () => {
   it('should render', () => {
-    const component = render(<Bookmark {...MOCK} />)
+    const component = shallowRender(<Bookmark {...MOCK} />)
     expect(component).toMatchSnapshot()
   })
 })
