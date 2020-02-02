@@ -1,6 +1,5 @@
-/** @jsx h */
-import { h } from 'preact'
-import render from 'preact-render-to-string'
+import React from 'react'
+import renderer from 'react-test-renderer'
 import Layout from '../components/layout'
 
 const MOCK = {
@@ -10,11 +9,13 @@ const MOCK = {
 
 describe('component - layout', () => {
   it('should render', () => {
-    const component = render(<Layout />)
-    expect(component).toMatchSnapshot()
+    const component = renderer.create(<Layout />)
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
   })
   it('should render with props', () => {
-    const component = render(<Layout {...MOCK}><b>#content</b></Layout>)
-    expect(component).toMatchSnapshot()
+    const component = renderer.create(<Layout {...MOCK}><b>#content</b></Layout>)
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })

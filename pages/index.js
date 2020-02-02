@@ -1,5 +1,4 @@
-/** @jsx h */
-import { h } from 'preact'
+import React from 'react'
 import Bookmark from '../components/bookmark'
 import Layout from '../components/layout'
 import fetch from 'isomorphic-unfetch'

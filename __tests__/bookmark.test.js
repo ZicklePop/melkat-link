@@ -1,6 +1,5 @@
-/** @jsx h */
-import { h } from 'preact'
-import { shallowRender } from 'preact-render-to-string'
+import React from 'react'
+import renderer from 'react-test-renderer'
 import Bookmark from '../components/bookmark'
 
 const MOCK = {
@@ -13,7 +12,8 @@ const MOCK = {
 
 describe('component - bookmark', () => {
   it('should render', () => {
-    const component = shallowRender(<Bookmark {...MOCK} />)
-    expect(component).toMatchSnapshot()
+    const component = renderer.create(<Bookmark {...MOCK} />)
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })

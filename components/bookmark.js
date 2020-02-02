@@ -1,5 +1,4 @@
-/** @jsx h */
-import { h } from 'preact'
+import React from 'react'
 import PropTypes from 'prop-types'
 import pull from 'lodash/pull'
 import map from 'lodash/map'
@@ -64,7 +63,7 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
       <p className={cx.details}>
         {domain}
         {' • '}
-        <time datetime={isoDate}>
+        <time dateTime={isoDate}>
           {prettyDate}
         </time>
       </p>

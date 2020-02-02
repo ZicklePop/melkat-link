@@ -1,5 +1,4 @@
-/** @jsx h */
-import { h } from 'preact'
+import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
@@ -14,7 +13,7 @@ class MyDocument extends Document {
         <Head>
           <link rel='apple-touch-icon' href='/static/apple-touch-icon.png' />
           <link rel='icon' href='/static/favicon.ico' />
-          <meta charset='utf-8' />
+          <meta charSet='utf-8' />
           <meta name='keywords' content='melkat, melanie, kat, link, blog, bookmarks' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <meta property='og:type' content='website' />

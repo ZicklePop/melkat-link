@@ -1,11 +1,11 @@
-/** @jsx h */
-import { h } from 'preact'
-import { shallowRender } from 'preact-render-to-string'
+import React from 'react'
+import renderer from 'react-test-renderer'
 import Index from '../pages/index'
 
-describe('component - bookmark', () => {
+describe('page - index', () => {
   it('should render', () => {
-    const component = shallowRender(<Index />)
-    expect(component).toMatchSnapshot()
+    const component = renderer.create(<Index />)
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })
