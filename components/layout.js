@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 const cx = {
   main: 'measure center sans-serif ph2',
   header: 'lh-title fw1 f2',
+  logo: 'mr2 h3 w3 v-mid',
   footer: 'lh-copy tc'
 }
 
@@ -36,6 +37,7 @@ const Layout = ({ title, description, children, className }) => {
         </style>
       </Head>
       <h1 className={cx.header}>
+        <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
         {'melkat.link'}
       </h1>
       {children}

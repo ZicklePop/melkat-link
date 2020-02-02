@@ -7,6 +7,11 @@ exports[`page - index should render 1`] = `
   <h1
     className="lh-title fw1 f2"
   >
+    <img
+      alt="illustration by supasavina"
+      className="mr2 h3 w3 v-mid"
+      src="/static/logo.png"
+    />
     melkat.link
   </h1>
   <footer
