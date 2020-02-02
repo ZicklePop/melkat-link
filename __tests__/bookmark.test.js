@@ -7,7 +7,7 @@ const MOCK = {
   title: 'Rae the Doe',
   link: 'https://www.raethedoe.com/',
   description: 'A webcomic about a gay disaster, a punk skunk, and lots and lots of puns. Created by Olive Rae Brinker. Updates Monday, Wednesday and Friday.',
-  pubDate: 'Sun, 26 Jan 2020 21:18:37 GMT',
+  pubDate: 'Sun, 26 Jan 2020',
   category: ['link', 'webcomic']
 }
 
