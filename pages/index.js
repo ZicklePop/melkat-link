@@ -7,16 +7,9 @@ import get from 'lodash/get'
 import map from 'lodash/map'
 import parser from 'fast-xml-parser'
 
-const classnames = {
-  h1: 'lh-title fw1 f2'
-}
-
 const Index = ({ links }) => {
   return (
     <Layout>
-      <h1 className={classnames.h1}>
-        {'melkat.link'}
-      </h1>
       {map(links, el => (
         <Bookmark key={el.guid} {...el} />
       ))}
