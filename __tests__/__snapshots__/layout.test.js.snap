@@ -18,7 +18,7 @@ exports[`component - layout should render 1`] = `
     className="lh-copy tc"
   >
     <p>
-      a link blog from 
+      a link blog by 
       <a
         href="https://melaniekat.com"
         rel="me"
@@ -28,9 +28,17 @@ exports[`component - layout should render 1`] = `
        &lt;3
     </p>
     <p>
-      powered by 
+      logo by 
       <a
-        href="https://raindrop.io"
+        href="https://savinaxu.com"
+      >
+        savina xu
+      </a>
+       • 
+      links from 
+      <a
+        href="https://raindrop.io/collection/9554731"
+        rel="me"
       >
         raindrop.io
       </a>
@@ -60,7 +68,7 @@ exports[`component - layout should render with props 1`] = `
     className="lh-copy tc"
   >
     <p>
-      a link blog from 
+      a link blog by 
       <a
         href="https://melaniekat.com"
         rel="me"
@@ -70,9 +78,17 @@ exports[`component - layout should render with props 1`] = `
        &lt;3
     </p>
     <p>
-      powered by 
+      logo by 
       <a
-        href="https://raindrop.io"
+        href="https://savinaxu.com"
+      >
+        savina xu
+      </a>
+       • 
+      links from 
+      <a
+        href="https://raindrop.io/collection/9554731"
+        rel="me"
       >
         raindrop.io
       </a>
