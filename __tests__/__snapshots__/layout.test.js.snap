@@ -2,24 +2,27 @@
 
 exports[`component - layout should render 1`] = `
 <main
-  className="measure center sans-serif ph2 "
+  className="jsx-2690997833 measure center sans-serif ph2 "
 >
   <h1
-    className="lh-title fw1 f2"
+    className="jsx-2690997833 lh-title fw1 f2"
   >
     <img
       alt="illustration by supasavina"
-      className="mr2 h3 w3 v-mid"
+      className="jsx-2690997833 mr2 h3 w3 v-mid"
       src="/static/logo.png"
     />
     melkat.link
   </h1>
   <footer
-    className="lh-copy tc"
+    className="jsx-2690997833 lh-copy tc"
   >
-    <p>
+    <p
+      className="jsx-2690997833"
+    >
       a link blog by 
       <a
+        className="jsx-2690997833"
         href="https://melaniekat.com"
         rel="me"
       >
@@ -27,9 +30,12 @@ exports[`component - layout should render 1`] = `
       </a>
        &lt;3
     </p>
-    <p>
+    <p
+      className="jsx-2690997833"
+    >
       logo by 
       <a
+        className="jsx-2690997833"
         href="https://savinaxu.com"
       >
         savina xu
@@ -37,6 +43,7 @@ exports[`component - layout should render 1`] = `
        • 
       links from 
       <a
+        className="jsx-2690997833"
         href="https://raindrop.io/collection/9554731"
         rel="me"
       >
@@ -49,14 +56,14 @@ exports[`component - layout should render 1`] = `
 
 exports[`component - layout should render with props 1`] = `
 <main
-  className="measure center sans-serif ph2 "
+  className="jsx-2690997833 measure center sans-serif ph2 "
 >
   <h1
-    className="lh-title fw1 f2"
+    className="jsx-2690997833 lh-title fw1 f2"
   >
     <img
       alt="illustration by supasavina"
-      className="mr2 h3 w3 v-mid"
+      className="jsx-2690997833 mr2 h3 w3 v-mid"
       src="/static/logo.png"
     />
     melkat.link
@@ -65,11 +72,14 @@ exports[`component - layout should render with props 1`] = `
     #content
   </b>
   <footer
-    className="lh-copy tc"
+    className="jsx-2690997833 lh-copy tc"
   >
-    <p>
+    <p
+      className="jsx-2690997833"
+    >
       a link blog by 
       <a
+        className="jsx-2690997833"
         href="https://melaniekat.com"
         rel="me"
       >
@@ -77,9 +87,12 @@ exports[`component - layout should render with props 1`] = `
       </a>
        &lt;3
     </p>
-    <p>
+    <p
+      className="jsx-2690997833"
+    >
       logo by 
       <a
+        className="jsx-2690997833"
         href="https://savinaxu.com"
       >
         savina xu
@@ -87,6 +100,7 @@ exports[`component - layout should render with props 1`] = `
        • 
       links from 
       <a
+        className="jsx-2690997833"
         href="https://raindrop.io/collection/9554731"
         rel="me"
       >
