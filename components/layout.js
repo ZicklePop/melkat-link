@@ -22,16 +22,12 @@ const Layout = ({ title, description, children, className }) => {
         <link rel='alternate' type='application/rss+xml' title='melkat.link' href='https://raindrop.io/collection/9554731/feed' />
         <style global jsx>
           {`
-            body, a {
+            body {
               color: #fff;
               background: #000;
             }
-
-            @media (prefers-color-scheme: light) {
-              body, a {
-                color: #111;
-                background: #fff;
-              }
+            a, a.link {
+              color: #0096DB;
             }
           `}
         </style>
@@ -43,14 +39,19 @@ const Layout = ({ title, description, children, className }) => {
       {children}
       <footer className={cx.footer}>
         <p>
-          {'a link blog from '}
+          {'a link blog by '}
           <a href='https://melaniekat.com' rel='me'>
             {'melanie kat'}
           </a>
           {' <3'}
         </p>
         <p>
-          {'powered by '}
+          {'logo by '}
+          <a href='https://savinaxu.com'>
+            {'savina xu'}
+          </a>
+          {' • '}
+          {'links from '}
           <a href='https://raindrop.io'>
             {'raindrop.io'}
           </a>
@@ -68,8 +69,8 @@ Layout.propTypes = {
 }
 
 Layout.defaultProps = {
-  title: 'melkat.link - a link blog from Melanie Kat',
-  description: 'a link blog from Melanie Kat',
+  title: 'melkat.link - a link blog by Melanie Kat',
+  description: 'a link blog by Melanie Kat',
   className: ''
 }
 
