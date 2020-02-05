@@ -52,7 +52,7 @@ const Layout = ({ title, description, children, className }) => {
           </a>
           {' • '}
           {'links from '}
-          <a href='https://raindrop.io'>
+          <a href='https://raindrop.io/collection/9554731' rel='me'>
             {'raindrop.io'}
           </a>
         </p>
