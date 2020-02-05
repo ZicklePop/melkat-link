@@ -20,18 +20,23 @@ const Layout = ({ title, description, children, className }) => {
         <meta property='og:description' content={description} />
         <meta property='og:title' content={title} />
         <link rel='alternate' type='application/rss+xml' title='melkat.link' href='https://raindrop.io/collection/9554731/feed' />
-        <style global jsx>
-          {`
-            body {
-              color: #fff;
-              background: #000;
-            }
-            a, a.link {
-              color: #0096DB;
-            }
-          `}
-        </style>
       </Head>
+      <style global jsx>
+        {`
+          body {
+            color: #fff;
+            background: #000;
+          }
+          a, a.link {
+            color: #0096DB;
+          }
+          @media (prefers-color-scheme: light) {
+           body {
+             color: #111;
+             background: #fff;
+           }
+        `}
+      </style>
       <h1 className={cx.header}>
         <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
         {'melkat.link'}
