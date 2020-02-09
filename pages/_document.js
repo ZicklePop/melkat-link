@@ -18,7 +18,7 @@ class MyDocument extends Document {
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <meta property='og:type' content='website' />
           <meta name='twitter:image' content='/static/facebook-open-graph.png' />
-          <meta name='twitter:image:alt' content='logo for melkat.dev' />
+          <meta name='twitter:image:alt' content='logo for melkat.link' />
           <meta property='og:image' content='/static/facebook-open-graph.png' />
           <meta property='og:image:height' content='630' />
           <meta property='og:image:width' content='1200' />
