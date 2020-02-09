@@ -79,7 +79,7 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
           <li key={`${pubDate}${el}`} className={cx.li}>
             {`#${trim(el)} `}
           </li>
-        )))}
+        ))}
       </ul>
     </article>
   )
