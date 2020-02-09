@@ -43,6 +43,8 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
     minute: 'numeric',
     hour12: true
   }).format(date)
+  
+  const tags = uniq(map(pull(category, 'link'), el => trim(el)))
 
   return (
     <article className={cx.article}>
@@ -73,7 +75,7 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
       </p>
 
       <ul className={cx.ul}>
-        {uniq(map(pull(category, 'link'), el => (
+        {map(tags, el => (
           <li key={`${pubDate}${el}`} className={cx.li}>
             {`#${trim(el)} `}
           </li>
