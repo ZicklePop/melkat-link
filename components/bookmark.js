@@ -43,7 +43,7 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
     minute: 'numeric',
     hour12: true
   }).format(date)
-  
+
   const tags = uniq(map(pull(category, 'link'), el => trim(el)))
 
   return (
