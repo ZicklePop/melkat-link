@@ -2,27 +2,27 @@
 
 exports[`page - index should render 1`] = `
 <main
-  className="jsx-2690997833 measure center sans-serif ph2 "
+  className="jsx-1760710597 measure center sans-serif ph2 "
 >
   <h1
-    className="jsx-2690997833 lh-title fw1 f2"
+    className="jsx-1760710597 lh-title fw1 f2"
   >
     <img
       alt="illustration by supasavina"
-      className="jsx-2690997833 mr2 h3 w3 v-mid"
+      className="jsx-1760710597 mr2 h3 w3 v-mid"
       src="/static/logo.png"
     />
     melkat.link
   </h1>
   <footer
-    className="jsx-2690997833 lh-copy tc"
+    className="jsx-1760710597 lh-copy tc"
   >
     <p
-      className="jsx-2690997833"
+      className="jsx-1760710597"
     >
       a link blog by 
       <a
-        className="jsx-2690997833"
+        className="jsx-1760710597"
         href="https://melaniekat.com"
         rel="me"
       >
@@ -31,11 +31,11 @@ exports[`page - index should render 1`] = `
        &lt;3
     </p>
     <p
-      className="jsx-2690997833"
+      className="jsx-1760710597"
     >
       logo by 
       <a
-        className="jsx-2690997833"
+        className="jsx-1760710597"
         href="https://savinaxu.com"
       >
         savina xu
@@ -43,7 +43,7 @@ exports[`page - index should render 1`] = `
        • 
       links from 
       <a
-        className="jsx-2690997833"
+        className="jsx-1760710597"
         href="https://raindrop.io/collection/9554731"
         rel="me"
       >

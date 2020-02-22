@@ -12,7 +12,7 @@ const cx = {
 const Layout = ({ title, description, children, className }) => {
   return (
     <main className={`${cx.main} ${className}`}>
-      <Head>
+      <Head lang='en'>
         <title>{title}</title>
         <meta name='description' content={description} />
         <meta name='twitter:title' content={title} />
@@ -31,10 +31,10 @@ const Layout = ({ title, description, children, className }) => {
             color: #0096DB;
           }
           @media (prefers-color-scheme: light) {
-           body {
-             color: #111;
-             background: #fff;
-           }
+            body {
+              color: #111;
+              background: #fff;
+            }
         `}
       </style>
       <h1 className={cx.header}>
