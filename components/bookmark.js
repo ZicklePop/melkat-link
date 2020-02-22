@@ -6,6 +6,7 @@ import unescape from 'lodash/unescape'
 import trim from 'lodash/trim'
 import get from 'lodash/get'
 import split from 'lodash/split'
+import uniq from 'lodash/uniq'
 
 const cx = {
   article: 'measure pb2 bb b--dark-gray',
@@ -43,6 +44,8 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
     hour12: true
   }).format(date)
 
+  const tags = uniq(map(pull(category, 'link'), el => trim(el)))
+
   return (
     <article className={cx.article}>
       {image !== '&lt;screenshot&gt;' && (
@@ -72,7 +75,7 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
       </p>
 
       <ul className={cx.ul}>
-        {map(pull(category, 'link'), el => (
+        {map(tags, el => (
           <li key={`${pubDate}${el}`} className={cx.li}>
             {`#${trim(el)} `}
           </li>
