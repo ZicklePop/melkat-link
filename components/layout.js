@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 const cx = {
   main: 'measure center sans-serif ph2',
   header: 'lh-title fw1 f2',
+  headerLink: 'no-underline',
   logo: 'mr2 h3 w3 v-mid',
   footer: 'lh-copy tc'
 }
@@ -30,16 +31,24 @@ const Layout = ({ title, description, children, className }) => {
           a, a.link {
             color: #0096DB;
           }
+          h1 a {
+            color: #fff;
+          }
           @media (prefers-color-scheme: light) {
             body {
               color: #111;
               background: #fff;
             }
+            h1 a {
+              color: #111;
+            }
         `}
       </style>
       <h1 className={cx.header}>
-        <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
-        {'melkat.link'}
+        <a href='/' className={cx.headerLink}>
+          <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
+          {'melkat.link'}
+        </a>
       </h1>
       {children}
       <footer className={cx.footer}>

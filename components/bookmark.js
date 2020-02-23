@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import pull from 'lodash/pull'
-import map from 'lodash/map'
-import unescape from 'lodash/unescape'
-import trim from 'lodash/trim'
 import get from 'lodash/get'
+import map from 'lodash/map'
+import pull from 'lodash/pull'
 import split from 'lodash/split'
+import trim from 'lodash/trim'
+import unescape from 'lodash/unescape'
 import uniq from 'lodash/uniq'
 
 const cx = {

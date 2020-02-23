@@ -2,27 +2,32 @@
 
 exports[`component - layout should render 1`] = `
 <main
-  className="jsx-1760710597 measure center sans-serif ph2 "
+  className="jsx-2582020583 measure center sans-serif ph2 "
 >
   <h1
-    className="jsx-1760710597 lh-title fw1 f2"
+    className="jsx-2582020583 lh-title fw1 f2"
   >
-    <img
-      alt="illustration by supasavina"
-      className="jsx-1760710597 mr2 h3 w3 v-mid"
-      src="/static/logo.png"
-    />
-    melkat.link
+    <a
+      className="jsx-2582020583 no-underline"
+      href="/"
+    >
+      <img
+        alt="illustration by supasavina"
+        className="jsx-2582020583 mr2 h3 w3 v-mid"
+        src="/static/logo.png"
+      />
+      melkat.link
+    </a>
   </h1>
   <footer
-    className="jsx-1760710597 lh-copy tc"
+    className="jsx-2582020583 lh-copy tc"
   >
     <p
-      className="jsx-1760710597"
+      className="jsx-2582020583"
     >
       a link blog by 
       <a
-        className="jsx-1760710597"
+        className="jsx-2582020583"
         href="https://melaniekat.com"
         rel="me"
       >
@@ -31,11 +36,11 @@ exports[`component - layout should render 1`] = `
        &lt;3
     </p>
     <p
-      className="jsx-1760710597"
+      className="jsx-2582020583"
     >
       logo by 
       <a
-        className="jsx-1760710597"
+        className="jsx-2582020583"
         href="https://savinaxu.com"
       >
         savina xu
@@ -43,7 +48,7 @@ exports[`component - layout should render 1`] = `
        • 
       links from 
       <a
-        className="jsx-1760710597"
+        className="jsx-2582020583"
         href="https://raindrop.io/collection/9554731"
         rel="me"
       >
@@ -56,30 +61,35 @@ exports[`component - layout should render 1`] = `
 
 exports[`component - layout should render with props 1`] = `
 <main
-  className="jsx-1760710597 measure center sans-serif ph2 "
+  className="jsx-2582020583 measure center sans-serif ph2 "
 >
   <h1
-    className="jsx-1760710597 lh-title fw1 f2"
+    className="jsx-2582020583 lh-title fw1 f2"
   >
-    <img
-      alt="illustration by supasavina"
-      className="jsx-1760710597 mr2 h3 w3 v-mid"
-      src="/static/logo.png"
-    />
-    melkat.link
+    <a
+      className="jsx-2582020583 no-underline"
+      href="/"
+    >
+      <img
+        alt="illustration by supasavina"
+        className="jsx-2582020583 mr2 h3 w3 v-mid"
+        src="/static/logo.png"
+      />
+      melkat.link
+    </a>
   </h1>
   <b>
     #content
   </b>
   <footer
-    className="jsx-1760710597 lh-copy tc"
+    className="jsx-2582020583 lh-copy tc"
   >
     <p
-      className="jsx-1760710597"
+      className="jsx-2582020583"
     >
       a link blog by 
       <a
-        className="jsx-1760710597"
+        className="jsx-2582020583"
         href="https://melaniekat.com"
         rel="me"
       >
@@ -88,11 +98,11 @@ exports[`component - layout should render with props 1`] = `
        &lt;3
     </p>
     <p
-      className="jsx-1760710597"
+      className="jsx-2582020583"
     >
       logo by 
       <a
-        className="jsx-1760710597"
+        className="jsx-2582020583"
         href="https://savinaxu.com"
       >
         savina xu
@@ -100,7 +110,7 @@ exports[`component - layout should render with props 1`] = `
        • 
       links from 
       <a
-        className="jsx-1760710597"
+        className="jsx-2582020583"
         href="https://raindrop.io/collection/9554731"
         rel="me"
       >
