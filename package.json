@@ -26,6 +26,7 @@
     "standard": "^14.3.1"
   },
   "jest": {
+    "globalSetup": "./global-setup.js",
     "transform": {
       "^.+\\.js$": "babel-jest"
     },

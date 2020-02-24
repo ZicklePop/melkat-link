@@ -2,9 +2,7 @@ import feed from '../__mocks__/feed'
 import getDate from '../utils/getDate'
 
 describe('util - getDate', () => {
-  beforeAll(() => {
-    process.env.TZ = 'UTC'
-  })
+  process.env.TZ = 'GMT-08:00'
   it('should get the date', () => {
     expect(getDate(feed[0].pubDate)).toMatchSnapshot()
   })
