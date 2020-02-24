@@ -6,17 +6,3 @@ Object {
   "prettyDate": "",
 }
 `;
-
-exports[`util - getDate should get the date 1`] = `
-Object {
-  "isoDate": "2020-02-20T21:59:55.000Z",
-  "prettyDate": "Thu, Feb 20, 2020, 1:59 PM",
-}
-`;
-
-exports[`util - getDate should get the date in different format 1`] = `
-Object {
-  "isoDate": "1990-01-19T08:00:00.000Z",
-  "prettyDate": "Fri, Jan 19, 1990, 12:00 AM",
-}
-`;
