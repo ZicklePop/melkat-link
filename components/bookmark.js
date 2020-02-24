@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import get from 'lodash/get'
+import Link from 'next/link'
+import getDate from '../utils/getDate'
+import getDescription from '../utils/getDescription'
+import getDomain from '../utils/getDomain'
+import getTags from '../utils/getTags'
 import map from 'lodash/map'
-import pull from 'lodash/pull'
-import split from 'lodash/split'
-import trim from 'lodash/trim'
-import unescape from 'lodash/unescape'
-import uniq from 'lodash/uniq'
 
 const cx = {
   article: 'measure pb2 bb b--dark-gray',
@@ -21,34 +20,15 @@ const cx = {
 }
 
 const Bookmark = ({ title, link, description, pubDate, category }) => {
-  const desc = split(description, '&lt;br/&gt;')
-  const image = get(desc, '[0]', '')
-    .replace('&lt;img src=&quot;', '')
-    .replace('&quot; /&gt;', '')
-  const body = get(desc, '[1]', unescape(description))
-
-  const domain = link
-    .replace(/.*:\/\//gi, '')
-    .replace('www.', '')
-    .split('/')[0]
-
-  const date = new Date(pubDate)
-  const isoDate = date.toISOString()
-  const prettyDate = new Intl.DateTimeFormat('en-US', {
-    weekday: 'short',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: true
-  }).format(date)
-
-  const tags = uniq(map(pull(category, 'link'), el => trim(el)))
+  if (!title || !link) return null
+  const domain = getDomain(link)
+  const tags = getTags(category)
+  const { body, image } = getDescription(description)
+  const { isoDate, prettyDate } = getDate(pubDate)
 
   return (
     <article className={cx.article}>
-      {image !== '&lt;screenshot&gt;' && (
+      {image && (
         <div className={cx.imgWrap}>
           <div
             className={cx.img}
@@ -64,7 +44,11 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
         </a>
       </h2>
       <p className={cx.details}>
-        {domain}
+        <Link href={`/d/${domain}`}>
+          <a>
+            {domain}
+          </a>
+        </Link>
         {' • '}
         <time dateTime={isoDate}>
           {prettyDate}
@@ -77,7 +61,11 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
       <ul className={cx.ul}>
         {map(tags, el => (
           <li key={`${pubDate}${el}`} className={cx.li}>
-            {`#${trim(el)} `}
+            <Link href={`/t/${el}`}>
+              <a>
+                {`#${el} `}
+              </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -91,6 +79,14 @@ Bookmark.propTypes = {
   description: PropTypes.string,
   pubDate: PropTypes.string,
   category: PropTypes.arrayOf(PropTypes.string)
+}
+
+Bookmark.defaultProps = {
+  title: '',
+  link: '',
+  description: '',
+  pubDate: '',
+  category: []
 }
 
 export default Bookmark

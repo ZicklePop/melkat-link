@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util - filterByTag should fail gracefully when there is nothing to filter 1`] = `Array []`;
+
+exports[`util - filterByTag should filter by tag 1`] = `
+Array [
+  Object {
+    "category": Array [
+      "article",
+      " games ",
+      " feminism ",
+    ],
+    "description": "&lt;img src=&quot;https://video-images.vice.com/test-uploads/articles/5e46a5bda6907900980b880f/lede/1581688536858-Widowmaker-Cutscene.png&quot; /&gt;&lt;br/&gt; Nico Deyo comes in holding no punches: 'The inhuman coloration to their skin and general lankiness denotes an otherness, but everything else feels oriented towards sexiness, creating a line of mean, angular villainesses—like fuckable Lamborghinis.' ",
+    "guid": "https://www.vice.com/en_us/article/wxeze5/blizzards-long-history-of-manic-pixie-nightmare-girls-and-fear-of-women",
+    "link": "https://www.vice.com/en_us/article/wxeze5/blizzards-long-history-of-manic-pixie-nightmare-girls-and-fear-of-women",
+    "pubDate": "Tue, 18 Feb 2020 15:26:26 GMT",
+    "title": " Blizzard's Long History of Manic Pixie Nightmare Girls and Fear of Women ",
+  },
+  Object {
+    "category": Array [
+      " games ",
+    ],
+    "description": "&lt;img src=&quot;https://img.itch.zone/aW1nLzIyNDgzNjgucG5n/508x254%23mb/aL3z6Y.png&quot; /&gt;&lt;br/&gt; This game was a surprise delight! If you’re a fan of Animal Crossing or Night in the Woods you will definitely love this game as much as I do. You can reach the ending in around 2 hours, but there’s so much about this delightful game that will keep you coming back, even after you’ve finished the story. ",
+    "guid": "https://adamgryu.itch.io/a-short-hike",
+    "link": "https://adamgryu.itch.io/a-short-hike",
+    "pubDate": "Tue, 18 Feb 2020 06:04:35 GMT",
+    "title": " A Short Hike ",
+  },
+  Object {
+    "category": Array [
+      " trans ",
+      " games ",
+    ],
+    "description": "&lt;img src=&quot;https://img.itch.zone/aW1nLzE1OTQ5OTkucG5n/original/VIkRbO.png&quot; /&gt;&lt;br/&gt; npckc is probably one of my favorite indie game creators. npckc rose to popularity with this game about taking your trans friend to a onsen, and it’s just so good. ",
+    "guid": "https://npckc.itch.io/one-night-hot-springs",
+    "link": "https://npckc.itch.io/one-night-hot-springs",
+    "pubDate": "Tue, 18 Feb 2020 05:57:46 GMT",
+    "title": " one night, hot springs ",
+  },
+  Object {
+    "category": Array [
+      "article",
+      " games ",
+      " spacetwinks ",
+    ],
+    "description": "&lt;img src=&quot;https://pixel.nymag.com/imgs/daily/intelligencer/2020/02/11/11-sonic-christian-fan-art-4.w600.h315.2x.jpg&quot; /&gt;&lt;br/&gt; This was such a fun read from Colin Spacetwinks about how Sonic is cool enough to fit in to any mold you want. ",
+    "guid": "https://nymag.com/intelligencer/2020/02/why-is-there-so-much-christian-sonic-the-hedgehog-fan-art.html",
+    "link": "https://nymag.com/intelligencer/2020/02/why-is-there-so-much-christian-sonic-the-hedgehog-fan-art.html",
+    "pubDate": "Wed, 12 Feb 2020 17:31:50 GMT",
+    "title": " The Pious World of Christian Sonic the Hedgehog Fan Art ",
+  },
+  Object {
+    "category": Array [
+      " games ",
+      " miku ",
+    ],
+    "description": "&lt;img src=&quot;http://miku.sega.jp/mega39s/img/ogimage.jpg&quot; /&gt;&lt;br/&gt; Hatsune Miku comes to Switch! I’m so excited!!! No word on the western release quite yet except that it comes out this year. I’m importing the collectors edition, of course lol ",
+    "guid": "http://miku.sega.jp/mega39s/",
+    "link": "http://miku.sega.jp/mega39s/",
+    "pubDate": "Wed, 12 Feb 2020 14:48:26 GMT",
+    "title": " Hatsune Miku Project DIVA MEGA39 ",
+  },
+  Object {
+    "category": Array [
+      "article",
+      " games ",
+      " interviews ",
+    ],
+    "description": "&lt;img src=&quot;https://video-images.vice.com/articles/5e31e0d13948f900999d22fb/lede/1580327511175-ss_ab4622e4665dcc297c670f4fd2cb241a52d2d049.jpeg&quot; /&gt;&lt;br/&gt; It’s fascinating to hear from the people behind this game. To me it was always mysterious game from a mysterious source that would mysteriously get new chapters. I never demanded anything from them, but I always enjoyed getting more. ",
+    "guid": "https://www.vice.com/en_us/article/jge5v7/it-took-nearly-10-years-to-finish-kentucky-route-zero-but-its-done",
+    "link": "https://www.vice.com/en_us/article/jge5v7/it-took-nearly-10-years-to-finish-kentucky-route-zero-but-its-done",
+    "pubDate": "Fri, 31 Jan 2020 05:34:20 GMT",
+    "title": " It Took Nearly 10 Years to Finish ‘Kentucky Route Zero,’ But It’s Done ",
+  },
+  Object {
+    "category": Array [
+      "article",
+      " games ",
+      " review ",
+    ],
+    "description": "&lt;img src=&quot;https://video-images.vice.com/articles/5e3076e7468cd10098d5c597/lede/1580243011246-Review-Image-Template.png&quot; /&gt;&lt;br/&gt; I’ve been loving every bit of Kentucky Route Zero since it came out 7 years ago. I’m so excited to get to play the ending! ",
+    "guid": "https://www.vice.com/en_us/article/bvgjma/kentucky-route-zero-pays-off-on-nine-years-of-hope-and-doubt-review",
+    "link": "https://www.vice.com/en_us/article/bvgjma/kentucky-route-zero-pays-off-on-nine-years-of-hope-and-doubt-review",
+    "pubDate": "Fri, 31 Jan 2020 05:29:57 GMT",
+    "title": " 'Kentucky Route Zero' Pays Off on Nine Years of Hope and Doubt ",
+  },
+  Object {
+    "category": Array [
+      " games ",
+      " panic ",
+    ],
+    "description": "&lt;img src=&quot;&lt;screenshot&gt;&quot; /&gt;&lt;br/&gt; It’s good to see Panic shamed in to doing right by the game pop up after throwing their weight around like nasty bullies. It’s a shame they needed to be shamed at all, they should be better than that. ",
+    "guid": "http://playdatepopup.com/blog/2020/01/29/welcome-to-2020/",
+    "link": "http://playdatepopup.com/blog/2020/01/29/welcome-to-2020/",
+    "pubDate": "Fri, 31 Jan 2020 05:17:34 GMT",
+    "title": " Playdate Pop Up - Welcome to 2020 ",
+  },
+  Object {
+    "category": Array [
+      " games ",
+      " pc ",
+    ],
+    "description": "&lt;img src=&quot;&lt;screenshot&gt;&quot; /&gt;&lt;br/&gt; This Pokemon-like MMO came out in early access this week. From what I’ve played it’s pretty solid for a very eary-access game. It focuses on 2v2 battles and unique creature types. You can also make queer characters! Choose from (limited) pronouns, and the main rival in the game is even non-binary! (extra props: they ban transphobic players!) ",
+    "guid": "https://crema.gg/games/temtem/",
+    "link": "https://crema.gg/games/temtem/",
+    "pubDate": "Fri, 24 Jan 2020 22:11:16 GMT",
+    "title": " Temtem ",
+  },
+]
+`;

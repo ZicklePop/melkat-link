@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util - getDescription should fail gracefully when there is no body or image 1`] = `
+Object {
+  "body": "",
+  "image": "",
+}
+`;
+
+exports[`util - getDescription should get the body and image 1`] = `
+Object {
+  "body": " A *two* hour documentary about the horrifying truth that is Amazon. ",
+  "image": "https://i1.wp.com/www.pbs.org/wgbh/frontline/wp-content/uploads/2020/01/amazon_signature2.jpg?resize=560%2C294",
+}
+`;
+
+exports[`util - getDescription should get the body when there is no image 1`] = `
+Object {
+  "body": " A few days ago I was pondering what the environmental difference in buying an ebook from amazon versus buying a physical book was. A day later I found this tool to determine what the environmental impact for visiting a website is. ",
+  "image": "",
+}
+`;

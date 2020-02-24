@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util - getDomain should fail gracefully when there is no domain for some reason 1`] = `""`;
+
+exports[`util - getDomain should get the domain 1`] = `"pbs.org"`;
+
+exports[`util - getDomain should get the domain with subdomain 1`] = `"adamgryu.itch.io"`;

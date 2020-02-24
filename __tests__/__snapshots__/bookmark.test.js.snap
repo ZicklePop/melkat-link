@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component - bookmark should fail gracefully 1`] = `null`;
+
+exports[`component - bookmark should render 1`] = `
+<article
+  className="measure pb2 bb b--dark-gray"
+>
+  <div
+    className="aspect-ratio aspect-ratio--1x1 h3 w3 pa0 ma0 ml2 mb2 fr"
+  >
+    <div
+      aria-label="Preview image"
+      className="aspect-ratio--object cover bg-center h3 w3 br2"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(https://i1.wp.com/www.pbs.org/wgbh/frontline/wp-content/uploads/2020/01/amazon_signature2.jpg?resize=560%2C294)",
+        }
+      }
+    />
+  </div>
+  <h2
+    className="lh-title fw3 f4 mb3"
+  >
+    <a
+      className="link underline"
+      href="https://www.pbs.org/wgbh/frontline/film/amazon-empire/"
+    >
+       Amazon Empire: The Rise and Reign of Jeff Bezos 
+    </a>
+  </h2>
+  <p
+    className="ttu lh-copy f6 mb3"
+  >
+    <a
+      href="/d/pbs.org"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      pbs.org
+    </a>
+     • 
+    <time
+      dateTime="2020-02-20T21:59:55.000Z"
+    >
+      Thu, Feb 20, 2020, 1:59 PM
+    </time>
+  </p>
+  <p
+    className="lh-copy f5"
+  >
+     A *two* hour documentary about the horrifying truth that is Amazon. 
+  </p>
+  <ul
+    className="list lh-copy pl0 mt0 f6"
+  >
+    <li
+      className="dib pr1 ttu"
+    >
+      <a
+        href="/t/article"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        #article 
+      </a>
+    </li>
+    <li
+      className="dib pr1 ttu"
+    >
+      <a
+        href="/t/amazon"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        #amazon 
+      </a>
+    </li>
+    <li
+      className="dib pr1 ttu"
+    >
+      <a
+        href="/t/unions"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        #unions 
+      </a>
+    </li>
+    <li
+      className="dib pr1 ttu"
+    >
+      <a
+        href="/t/tech"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        #tech 
+      </a>
+    </li>
+  </ul>
+</article>
+`;
