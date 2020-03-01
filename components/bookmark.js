@@ -42,7 +42,7 @@ const Bookmark = ({ _id, cover, created, domain, excerpt, link, tags, title, typ
             {'★'}
           </a>
         </Link>
-        {' • '}
+        {' '}
         <Link href={`/d/${domain}`}>
           <a>
             {domain}
