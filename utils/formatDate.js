@@ -5,12 +5,8 @@ const formatDate = (pubDate) => {
     weekday: 'short',
     year: 'numeric',
     month: 'short',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: true
+    day: 'numeric'
   }).format(date)
-
   return prettyDate
 }
 

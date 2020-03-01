@@ -9,7 +9,7 @@ import { links as API } from '../../../utils/api'
 const Index = ({ data, type }) => (
   <Layout title={`melkat.link - links of type ${type}`}>
     {map(data, el => (
-      <Bookmark key={el.guid} {...el} />
+      <Bookmark key={el._id} {...el} />
     ))}
   </Layout>
 )

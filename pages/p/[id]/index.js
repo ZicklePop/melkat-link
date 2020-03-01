@@ -8,11 +8,12 @@ import { link as API } from '../../../utils/api'
 
 const Index = ({ data, id }) => (
   <Layout
-    title={`melkat.link - ${get(data, '[0].title', '')}`}
-    description={get(data, '[0].excerpt', '')}
+    title={`melkat.link - ${get(data, '[0].title')}`}
+    description={get(data, '[0].excerpt')}
+    cover={get(data, '[0].cover')}
   >
     {map(data, el => (
-      <Bookmark key={el.guid} {...el} />
+      <Bookmark key={el._id} {...el} />
     ))}
   </Layout>
 )

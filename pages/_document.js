@@ -11,17 +11,15 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <link rel='alternate' type='application/rss+xml' title='melkat.link' href='https://raindrop.io/collection/9554731/feed' />
           <link rel='apple-touch-icon' href='/static/apple-touch-icon.png' />
           <link rel='icon' href='/static/favicon.ico' />
           <meta charSet='utf-8' />
           <meta name='keywords' content='melkat, melanie, kat, link, blog, bookmarks' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-          <meta property='og:type' content='website' />
-          <meta name='twitter:image' content='/static/facebook-open-graph.png' />
-          <meta name='twitter:image:alt' content='logo for melkat.link' />
-          <meta property='og:image' content='/static/facebook-open-graph.png' />
           <meta property='og:image:height' content='630' />
           <meta property='og:image:width' content='1200' />
+          <meta property='og:type' content='website' />
         </Head>
         <body>
           <Main />

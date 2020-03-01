@@ -10,7 +10,7 @@ const cx = {
   footer: 'lh-copy tc'
 }
 
-const Layout = ({ title, description, children, className }) => {
+const Layout = ({ title, description, children, className, cover }) => {
   return (
     <main className={`${cx.main} ${className}`}>
       <Head>
@@ -20,7 +20,9 @@ const Layout = ({ title, description, children, className }) => {
         <meta name='twitter:description' content={description} />
         <meta property='og:description' content={description} />
         <meta property='og:title' content={title} />
-        <link rel='alternate' type='application/rss+xml' title='melkat.link' href='https://raindrop.io/collection/9554731/feed' />
+        <meta name='twitter:image' content={cover} />
+        <meta name='twitter:image:alt' content={description} />
+        <meta property='og:image' content={cover} />
       </Head>
       <style global jsx>
         {`
@@ -28,8 +30,9 @@ const Layout = ({ title, description, children, className }) => {
             color: #fff;
             background: #000;
           }
-          a, a.link {
+          a {
             color: #0096DB;
+            text-decoration: none;
           }
           h1 a {
             color: #fff;
@@ -79,13 +82,15 @@ Layout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
+  cover: PropTypes.string
 }
 
 Layout.defaultProps = {
   title: 'melkat.link - a link blog by Melanie Kat',
   description: 'a link blog by Melanie Kat',
-  className: ''
+  className: '',
+  cover: '/static/facebook-open-graph.png'
 }
 
 export default Layout

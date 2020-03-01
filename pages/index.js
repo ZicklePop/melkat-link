@@ -8,7 +8,7 @@ import { links as API } from '../utils/api'
 const Index = ({ data }) => (
   <Layout>
     {map(data, el => (
-      <Bookmark key={el.guid} {...el} />
+      <Bookmark key={el._id} {...el} />
     ))}
   </Layout>
 )
