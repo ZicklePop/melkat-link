@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import getDate from '../utils/getDate'
-import getDescription from '../utils/getDescription'
-import getDomain from '../utils/getDomain'
-import getTags from '../utils/getTags'
+import formatDate from '../utils/formatDate'
 import map from 'lodash/map'
 
 const cx = {
@@ -19,22 +16,18 @@ const cx = {
   details: 'ttu lh-copy f6 mb3'
 }
 
-const Bookmark = ({ title, link, description, pubDate, category }) => {
+const Bookmark = ({ _id, cover, created, domain, excerpt, link, tags, title, type }) => {
   if (!title || !link) return null
-  const domain = getDomain(link)
-  const tags = getTags(category)
-  const { body, image } = getDescription(description)
-  const { isoDate, prettyDate } = getDate(pubDate)
 
   return (
     <article className={cx.article}>
-      {image && (
+      {cover && (
         <div className={cx.imgWrap}>
           <div
             className={cx.img}
             role='img'
             aria-label='Preview image'
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${cover})` }}
           />
         </div>
       )}
@@ -44,23 +37,36 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
         </a>
       </h2>
       <p className={cx.details}>
+        <Link href={`/p/${_id}`}>
+          <a>
+            {'★'}
+          </a>
+        </Link>
+        {' • '}
         <Link href={`/d/${domain}`}>
           <a>
             {domain}
           </a>
         </Link>
         {' • '}
-        <time dateTime={isoDate}>
-          {prettyDate}
+        <time dateTime={created}>
+          {formatDate(created)}
         </time>
       </p>
       <p className={cx.p}>
-        {body}
+        {excerpt}
       </p>
 
       <ul className={cx.ul}>
+        <li className={cx.li}>
+          <Link href={`/c/${type}`}>
+            <a>
+              {`#${type} `}
+            </a>
+          </Link>
+        </li>
         {map(tags, el => (
-          <li key={`${pubDate}${el}`} className={cx.li}>
+          <li key={`${created}${el}`} className={cx.li}>
             <Link href={`/t/${el}`}>
               <a>
                 {`#${el} `}
@@ -74,19 +80,23 @@ const Bookmark = ({ title, link, description, pubDate, category }) => {
 }
 
 Bookmark.propTypes = {
-  title: PropTypes.string,
+  _id: PropTypes.string,
+  cover: PropTypes.string,
+  created: PropTypes.string,
+  domain: PropTypes.string,
+  excerpt: PropTypes.string,
   link: PropTypes.string,
-  description: PropTypes.string,
-  pubDate: PropTypes.string,
-  category: PropTypes.arrayOf(PropTypes.string)
+  tags: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string
 }
 
 Bookmark.defaultProps = {
-  title: '',
-  link: '',
-  description: '',
-  pubDate: '',
-  category: []
+  created: '',
+  domain: '',
+  excerpt: '',
+  tags: [],
+  type: ''
 }
 
 export default Bookmark

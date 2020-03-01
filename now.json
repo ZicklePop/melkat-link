@@ -1,0 +1,10 @@
+{
+  "env": {
+    "RAINDROP_TOKEN": "@raindrop-token"
+  },
+  "build": {
+    "env": {
+      "RAINDROP_TOKEN": "@raindrop-token"
+    }
+  }
+}

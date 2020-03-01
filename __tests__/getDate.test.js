@@ -1,7 +1,7 @@
-import getDate from '../utils/getDate'
+import formatDate from '../utils/formatDate'
 
-describe('util - getDate', () => {
+describe('util - formatDate', () => {
   it('should fail gracefully when there is no date for some reason', () => {
-    expect(getDate('')).toMatchSnapshot()
+    expect(formatDate('')).toMatchSnapshot()
   })
 })

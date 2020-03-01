@@ -1,24 +1,23 @@
 import React from 'react'
 import Bookmark from '../components/bookmark'
 import Layout from '../components/layout'
-import getLinks from '../utils/getLinks'
+import fetch from 'isomorphic-unfetch'
 import map from 'lodash/map'
+import { links as API } from '../utils/api'
 
-const Index = ({ links }) => {
-  return (
-    <Layout>
-      {map(links, el => (
-        <Bookmark key={el.guid} {...el} />
-      ))}
-    </Layout>
-  )
-}
+const Index = ({ data }) => (
+  <Layout>
+    {map(data, el => (
+      <Bookmark key={el.guid} {...el} />
+    ))}
+  </Layout>
+)
 
 Index.getInitialProps = async function () {
-  const links = await getLinks()
-
+  const res = await fetch(API)
+  const data = await res.json()
   return {
-    links
+    data
   }
 }
 

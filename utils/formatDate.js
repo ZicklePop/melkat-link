@@ -1,7 +1,6 @@
-const getDate = (pubDate) => {
-  if (!pubDate) return { isoDate: '', prettyDate: '' }
+const formatDate = (pubDate) => {
+  if (!pubDate) return ''
   const date = new Date(pubDate)
-  const isoDate = date.toISOString()
   const prettyDate = new Intl.DateTimeFormat('en-US', {
     weekday: 'short',
     year: 'numeric',
@@ -12,7 +11,7 @@ const getDate = (pubDate) => {
     hour12: true
   }).format(date)
 
-  return { isoDate, prettyDate }
+  return prettyDate
 }
 
-export default getDate
+export default formatDate

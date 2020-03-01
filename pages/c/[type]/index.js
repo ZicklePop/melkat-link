@@ -6,8 +6,8 @@ import get from 'lodash/get'
 import map from 'lodash/map'
 import { links as API } from '../../../utils/api'
 
-const Index = ({ data, tag }) => (
-  <Layout title={`melkat.link - links tagged ${tag}`}>
+const Index = ({ data, type }) => (
+  <Layout title={`melkat.link - links of type ${type}`}>
     {map(data, el => (
       <Bookmark key={el.guid} {...el} />
     ))}
@@ -15,12 +15,12 @@ const Index = ({ data, tag }) => (
 )
 
 Index.getInitialProps = async function ({ query }) {
-  const tag = get(query, 'tag')
-  const res = await fetch(`${API}?tag=${tag}`)
+  const type = get(query, 'type')
+  const res = await fetch(`${API}?type=${type}`)
   const data = await res.json()
 
   return {
-    tag,
+    type,
     data
   }
 }
