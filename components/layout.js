@@ -37,6 +37,9 @@ const Layout = ({ title, description, children, className, cover }) => {
           h1 a {
             color: #fff;
           }
+          article {
+            border-color: rgb(255,255,255,.2);
+          }
           @media (prefers-color-scheme: light) {
             body {
               color: #111;
@@ -44,6 +47,9 @@ const Layout = ({ title, description, children, className, cover }) => {
             }
             h1 a {
               color: #111;
+            }
+            article {
+              border-color: rgba(0,0,0,.2);
             }
         `}
       </style>
