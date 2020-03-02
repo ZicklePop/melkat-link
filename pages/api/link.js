@@ -16,7 +16,7 @@ export default async (req, res) => {
   )
   const data = await apiResponse.json()
   const out = reduceDrops([get(data, 'item', {})])
-  if (get(data, `item.collection['$id']`) !== COLLECTION_ID) {
+  if (get(data, 'item.collection[\'$id\']') !== COLLECTION_ID) {
     res.status(404).json([])
   } else {
     res.status(200).json(out)
