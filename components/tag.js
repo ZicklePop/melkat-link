@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Tag = ({ tag }) => {
   if (!tag) return null
   return (
-    <Link href={`/t/${tag}`}>
+    <Link href={'/t/[tag]'} as={`/t/${tag}`}>
       <a>
         {`#${tag}`}
       </a>

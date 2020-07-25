@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Domain = ({ domain }) => {
   if (!domain) return null
   return (
-    <Link href={`/d/${domain}`}>
+    <Link href={'/d/[domain]'} as={`/d/${domain}`}>
       <a>
         {domain.replace('www.', '')}
       </a>
