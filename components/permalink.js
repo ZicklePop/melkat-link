@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Permalink = ({ id }) => {
   if (!id) return null
   return (
-    <Link href={'/p/[id]'} as={`/p/${id}`}>
+    <Link href='/p/[id]' as={`/p/${id}`}>
       <a title='permalink'>
         {'★'}
       </a>

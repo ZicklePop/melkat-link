@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Category = ({ type }) => {
   if (!type) return null
   return (
-    <Link href={'/c/[type]'} as={`/c/${type}`}>
+    <Link href='/c/[type]' as={`/c/${type}`}>
       <a>
         {`#${type} `}
       </a>
