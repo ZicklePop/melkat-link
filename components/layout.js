@@ -1,6 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
 import PropTypes from 'prop-types'
+import Head from 'next/head'
+import Link from 'next/link'
 
 const cx = {
   main: 'measure center sans-serif ph2',
@@ -54,10 +55,12 @@ const Layout = ({ title, description, children, className, cover }) => {
         `}
       </style>
       <h1 className={cx.header}>
-        <a href='/' className={cx.headerLink}>
-          <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
-          {'melkat.link'}
-        </a>
+        <Link href='/'>
+          <a className={cx.headerLink}>
+            <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
+            {'melkat.link'}
+          </a>
+        </Link>
       </h1>
       {children}
       <footer className={cx.footer}>
