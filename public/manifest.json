@@ -20,13 +20,13 @@
       "name": "Links to articles",
       "short_name": "Articles",
       "description": "Articles linked on melkat.link",
-      "url": "/c/article",
+      "url": "/c/article"
     },
     {
       "name": "Links to videos",
       "short_name": "Videos",
       "description": "Videos linked on melkat.link",
-      "url": "/c/video",
+      "url": "/c/video"
     }
   ],
   "splash_pages": null
