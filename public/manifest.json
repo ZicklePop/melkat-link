@@ -4,7 +4,7 @@
   "description": "a link blog by Melanie Kat",
   "theme_color": "#00d6ff",
   "background_color": "#000000",
-  "display": "browser",
+  "display": "minimal-ui",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
@@ -12,7 +12,8 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "1024x1204",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "shortcuts": [
