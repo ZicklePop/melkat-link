@@ -41,6 +41,10 @@
     ]
   },
   "standard": {
-    "env": "jest"
+    "env": "jest",
+    "ignore": [
+        "/public/sw.js",
+        "/public/workbox-*.js"
+    ]
   }
 }
