@@ -16,7 +16,7 @@ exports[`component - layout should render 1`] = `
       <img
         alt="illustration by supasavina"
         className="jsx-1756277576 mr2 h3 v-mid"
-        src="/static/logo.png"
+        src="/logo.png"
       />
       melkat.link
     </a>
@@ -77,7 +77,7 @@ exports[`component - layout should render with props 1`] = `
       <img
         alt="illustration by supasavina"
         className="jsx-1756277576 mr2 h3 v-mid"
-        src="/static/logo.png"
+        src="/logo.png"
       />
       melkat.link
     </a>

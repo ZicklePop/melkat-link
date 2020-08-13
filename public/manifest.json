@@ -1,0 +1,33 @@
+{
+  "name": "melkat.link - a link blog",
+  "short_name": "melkat.link",
+  "description": "a link blog by Melanie Kat",
+  "theme_color": "#00d6ff",
+  "background_color": "#000000",
+  "display": "browser",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "1024x1204",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Links to articles",
+      "short_name": "Articles",
+      "description": "Articles linked on melkat.link",
+      "url": "/c/article",
+    },
+    {
+      "name": "Links to videos",
+      "short_name": "Videos",
+      "description": "Videos linked on melkat.link",
+      "url": "/c/video",
+    }
+  ],
+  "splash_pages": null
+}

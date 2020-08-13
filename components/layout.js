@@ -61,7 +61,7 @@ const Layout = ({ title, description, children, className, cover }) => {
       <h1 className={cx.header}>
         <Link href='/'>
           <a className={cx.headerLink}>
-            <img src='/static/logo.png' alt='illustration by supasavina' className={cx.logo} />
+            <img src='/logo.png' alt='illustration by supasavina' className={cx.logo} />
             {'melkat.link'}
           </a>
         </Link>
@@ -103,7 +103,7 @@ Layout.defaultProps = {
   title: 'melkat.link - a link blog by Melanie Kat',
   description: 'a link blog by Melanie Kat',
   className: '',
-  cover: '/static/facebook-open-graph.png'
+  cover: '/cover.png'
 }
 
 export default Layout

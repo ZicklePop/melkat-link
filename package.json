@@ -4,6 +4,7 @@
   "main": "server.js",
   "license": "Unlicense",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "next build",
     "dev": "next",
     "lint": "standard",
@@ -15,6 +16,7 @@
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.5.1",
+    "next-pwa": "^3.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -25,6 +27,9 @@
     "react-test-renderer": "^16.13.0",
     "standard": "^14.3.3",
     "vercel": "^19.2.0"
+  },
+  "resolutions": {
+    "serialize-javascript": "^3.1.0"
   },
   "jest": {
     "transform": {
