@@ -6,7 +6,7 @@ const Permalink = ({ id }) => {
   return (
     <Link href='/p/[id]' as={`/p/${id}`}>
       <a title='permalink'>
-        {'★'}
+        ★
       </a>
     </Link>
   )

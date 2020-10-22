@@ -64,7 +64,7 @@ const Layout = ({ title, description, children, className, cover }) => {
         <Link href='/'>
           <a className={cx.headerLink}>
             <img src='/logo.png' alt='illustration by supasavina' className={cx.logo} />
-            {'melkat.link'}
+            melkat.link
           </a>
         </Link>
       </h1>
@@ -73,19 +73,19 @@ const Layout = ({ title, description, children, className, cover }) => {
         <p>
           {'a link blog by '}
           <a href='https://melaniekat.com' rel='me'>
-            {'melanie kat'}
+            melanie kat
           </a>
           {' <3'}
         </p>
         <p>
           {'logo by '}
           <a href='https://www.savinaxu.com'>
-            {'savina xu'}
+            savina xu
           </a>
           {' • '}
           {'links from '}
           <a href='https://raindrop.io/collection/9554731' rel='me'>
-            {'raindrop.io'}
+            raindrop.io
           </a>
         </p>
       </footer>
