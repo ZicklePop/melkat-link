@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '../public/logo.png'
 import polyfills from '../utils/polyfills'
 
 polyfills()
@@ -72,7 +73,8 @@ const Layout = ({ title, description, children, className, cover }) => {
                 alt='illustration by supasavina'
                 height={64}
                 loading='eager'
-                src='/logo.png'
+                src={logo}
+                placeholder='blur'
                 width={61}
               />
             </div>

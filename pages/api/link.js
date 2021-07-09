@@ -8,7 +8,7 @@ const headers = {
   Authorization: `Bearer ${get(process, 'env.RAINDROP_TOKEN', '')}`
 }
 
-export default async (req, res) => {
+async function link (req, res) {
   const id = get(req, 'query.id')
   const apiResponse = await fetch(
     `${API}${id}`,
@@ -22,3 +22,6 @@ export default async (req, res) => {
     res.status(200).json(out)
   }
 }
+
+export default link
+

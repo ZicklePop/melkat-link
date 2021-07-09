@@ -9,7 +9,7 @@ const headers = {
   Authorization: `Bearer ${get(process, 'env.RAINDROP_TOKEN', '')}`
 }
 
-export default async (req, res) => {
+async function links (req, res) {
   const page = get(req, 'query.page', 0)
 
   const domain = get(req, 'query.domain')
@@ -43,3 +43,6 @@ export default async (req, res) => {
   const out = reduceDrops(get(data, 'items', []))
   res.status(200).json(out)
 }
+
+export default links
+

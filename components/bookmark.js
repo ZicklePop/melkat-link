@@ -13,7 +13,7 @@ const Bookmark = ({ _id, cover, created, domain, excerpt, link, tags, title, typ
   if (!title || !link) return null
   return (
     <article className={cx.article}>
-      <Image cover={cover} />
+      <Image cover={cover} alt={title} />
       <Title title={title} link={link} />
       <Details domain={domain} created={created} />
       <Excerpt excerpt={excerpt} />

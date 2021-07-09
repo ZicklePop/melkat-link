@@ -7,7 +7,7 @@
     "preinstall": "npx npm-force-resolutions",
     "build": "next build",
     "dev": "next",
-    "lint": "standard",
+    "lint": "next lint",
     "next": "next",
     "now": "vercel dev",
     "start": "next start",
@@ -25,6 +25,8 @@
     "tachyons": "^4.12.0"
   },
   "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
     "jest": "^27.0.6",
     "next-compose-plugins": "^2.2.1",
     "postcss": "^8.3.5",
@@ -44,13 +46,6 @@
     "testPathIgnorePatterns": [
       "<rootDir>/.next/",
       "<rootDir>/node_modules/"
-    ]
-  },
-  "standard": {
-    "env": "jest",
-    "ignore": [
-      "/public/sw.js",
-      "/public/workbox-*.js"
     ]
   }
 }
