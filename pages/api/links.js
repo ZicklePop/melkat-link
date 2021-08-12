@@ -36,7 +36,7 @@ async function links (req, res) {
   }
 
   const apiResponse = await fetch(
-    `${API}&page=${page}${searchQuery}`,
+    `${API}&page=${page}&sort=-created${searchQuery}`,
     { headers }
   )
   const data = await apiResponse.json()
